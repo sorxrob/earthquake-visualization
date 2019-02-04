@@ -1,6 +1,8 @@
-# earthquake-visulization
+# Latest Earthquakes Visualization
 
 > A real-time earthquake visualization of USGS Earthquake Hazards Program using Nuxt
+
+![alt text](https://i.imgur.com/EolQPhq.png)
 
 ## Build Setup
 
