@@ -1,6 +1,6 @@
 {
   "name": "earthquake-visulization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A real-time earthquake visualization of USGS Earthquake Hazards Program using Nuxt",
   "author": "Robert Soriano",
   "private": true,

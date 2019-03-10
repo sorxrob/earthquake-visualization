@@ -10,8 +10,8 @@
 			<v-divider></v-divider>
 			<v-card-text class="py-1">
 				<v-radio-group v-model="selected" column>
-					<v-radio label="Today" value="all_day" dark color="red"></v-radio>
-					<v-radio label="All week" value="all_week" dark color="red"></v-radio>
+					<v-radio label="Today" value="all_day" :dark="$store.state.darkMode" color="red"></v-radio>
+					<v-radio label="All week" value="all_week" :dark="$store.state.darkMode" color="red"></v-radio>
 				</v-radio-group>
 				*More filters soon!
 			</v-card-text>

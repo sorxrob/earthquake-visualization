@@ -1,10 +1,10 @@
 <template>
 	<v-dialog v-model="loader" persistent width="300">
-		<v-card color="primary" dark>
+		<v-card :dark="$store.state.darkMode">
 			<v-card-text>
 				<v-layout row wrap>
 					<v-flex xs3>
-						<v-progress-circular indeterminate color="white"></v-progress-circular>
+						<v-progress-circular indeterminate :dark="$store.state.darkMode"></v-progress-circular>
 					</v-flex>
 					<v-flex xs9>
 						{{message}}

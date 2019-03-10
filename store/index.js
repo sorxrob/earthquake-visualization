@@ -20,7 +20,8 @@ const store = () => {
 			},
 			autoUpdate: false,
 			loader: false,
-			loaderMessage: null
+			loaderMessage: null,
+			darkMode: true
 		},
 		getters: {
 			GET_MARKERS: (state) => state.markers.map((marker) => {
