@@ -75,6 +75,11 @@ export default {
 		drawer: null,
 		settingsDialog: false
 	}),
+	created () {
+		if (process.browser && localStorage.getItem('latest_earthquakes_dark_mode')) {
+			this.$store.commit('SET_DARK_MODE', localStorage.getItem('latest_earthquakes_dark_mode'));
+		}
+	},
 	methods: {
 		async refresh () {
 			this.$store.commit('SHOW_LOADER', 'Fetching earthquakes. Please wait...');
@@ -93,6 +98,11 @@ export default {
 	},
 	components: {
 		Menu
+	},
+	watch: {
+		'$store.state.darkMode' (val) {
+			localStorage.setItem('latest_earthquakes_dark_mode', val);
+		}
 	}
 }
 </script>

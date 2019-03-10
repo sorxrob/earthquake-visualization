@@ -60,6 +60,9 @@ const store = () => {
 			HIDE_LOADER (state, payload) {
 				state.loaderMessage = null;
 				state.loader = false;
+			},
+			SET_DARK_MODE (state, payload) {
+				state.darkMode = payload == "true" ? true : false;
 			}
 		},
 		actions: {
